@@ -49,7 +49,7 @@ function App() {
       const timer = setInterval(calculateTimeLeft, 1000);
       return () => clearInterval(timer);
     }
-  }, [toggle, targetDate]);
+  }, [toggle, targetDate]);  // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleClick = () => {
     setToggle(!toggle);
