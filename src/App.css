@@ -1,38 +1,117 @@
-.App {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom left, skyblue, blueviolet);
+}
+h1 {
+  font-size: 4rem;
+}
+.container {
+  height: 28.125rem;
+  width: 40.625rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span {
+  color: blueviolet;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.innercontainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  height: 2rem;
+  width: 15.5rem;
+  border-radius: 0.2rem;
+  border: white 0.125rem solid;
+  background: linear-gradient(to top right, skyblue, blueviolet);
+  cursor: pointer;
+  padding-inline-start: 0.3rem;
+  padding-inline-end: 0.3rem;
+  /* padding-top: 0%; */
+  font-size: 1.2rem;
+}
+
+.startbutton {
+  margin: 0.5px;
+  height: 2.2rem;
+  width: 6.25rem;
+  border-radius: 0.2rem;
+  border: white 0.1rem solid;
+  background: linear-gradient(to top right, skyblue, blueviolet);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.8rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.timer h2 {
+  color: black;
+  font-size: 1.2rem;
+}
+.timer span {
+  font-size: 2.5rem;
+  color: whitesmoke;
+}
+.day {
+  display: flex;
+  height: 6.25rem;
+  width: 6.25rem;
+  margin: 0.6rem;
+  border-radius: 0.3rem;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: linear-gradient(to top right, skyblue, blueviolet);
+  box-shadow: 0.18rem 0.18rem 0.72rem 0rem;
 }
 
-.App-link {
-  color: #61dafb;
+.hour {
+  display: flex;
+  height: 6.25rem;
+  width: 6.25rem;
+  margin: 0.6rem;
+  border-radius: 0.3rem;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top right, skyblue, blueviolet);
+  box-shadow: 0.18rem 0.18rem 0.72rem 0rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.min {
+  display: flex;
+  height: 6.25rem;
+  width: 6.25rem;
+  margin: 0.6rem;
+  border-radius: 0.3rem;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top right, skyblue, blueviolet);
+  box-shadow: 0.18rem 0.18rem 0.72rem 0rem;
+}
+.message {
+  color: purple;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+.sec {
+  display: flex;
+  height: 6.25rem;
+  width: 6.25rem;
+  margin: 0.6rem;
+  border-radius: 0.3rem;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top right, skyblue, blueviolet);
+  box-shadow: 0.18rem 0.18rem 0.72rem 0rem;
 }
